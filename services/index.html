@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Pricing — FieldBridge HQ</title>
+<meta name="description" content="Construction workflow templates and automated project monitoring. Built by a Senior PM. Runs without the overhead.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.pricing-card {
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: all 0.2s;
+}
+.pricing-card:hover { border-color: var(--accent); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+.pricing-card.featured {
+  border-color: var(--accent);
+  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.15);
+}
+.pricing-card.featured::before {
+  content: 'Coming Soon';
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: var(--accent);
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.pricing-card .plan-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+.pricing-card .plan-desc {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+.pricing-card .price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.pricing-card .price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+.pricing-card .price-sub {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+.pricing-card ul { list-style: none; margin-bottom: 2rem; }
+.pricing-card ul li {
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-100);
+}
+.pricing-card ul li:last-child { border-bottom: none; }
+.pricing-card ul li::before { content: '✓ '; color: var(--accent); font-weight: 700; }
+.pricing-card .btn {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.pricing-card .btn-primary {
+  background: var(--accent);
+  color: var(--navy);
+}
+.pricing-card .btn-primary:hover { background: var(--accent-hover); }
+.pricing-card .btn-secondary {
+  background: var(--gray-100);
+  color: var(--gray-500);
+  cursor: default;
+}
+
+.faq-section { max-width: 640px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+.faq-section h2 { text-align: center; margin-bottom: 2rem; }
+.faq-item { margin-bottom: 1.5rem; }
+.faq-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; }
+.faq-item p { font-size: 0.9rem; color: var(--gray-500); }
+
+@media (max-width: 640px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="announcement">
+  🆓 <a href="/">Free project pulse check</a> — book 30 min, get your RFI cycle benchmarked
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">FIELD<span>BRIDGE</span> HQ</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/services/">Services</a>
+      <a href="/guide/">Guide</a>
+      <a href="/about/">About</a>
+      <a href="/starter-kit/" class="nav-cta">Free Kit</a>
+    </div>
+  </div>
+</nav>
+
+<section class="about-header">
+  <div class="container">
+    <h1 style="font-size: 2.2rem; font-weight: 800;">Services & Pricing</h1>
+    <p style="color: var(--gray-500); margin-top: 0.75rem;">Built by a Senior PM. Runs on automation. Priced for any GC to say yes.</p>
+  </div>
+</section>
+
+<div class="pricing-grid">
+  <div class="pricing-card">
+    <div class="plan-name">📁 Template Vault</div>
+    <div class="plan-desc">Monthly construction workflow templates</div>
+    <div class="price">$47 <span>/mo</span></div>
+    <div class="price-sub">or $397/yr (save 30%)</div>
+    <ul>
+      <li>50+ ready-to-use templates on day one</li>
+      <li>3 new templates added every month</li>
+      <li>RFI management, submittal tracking, status reports, correspondence, spec analysis</li>
+      <li>Works with the tools you already use</li>
+      <li>No technical setup — download and use</li>
+      <li>New: Construction AI prompt library (47 prompts)</li>
+      <li>Monthly email with newest templates + tips</li>
+    </ul>
+    <a href="/starter-kit/" class="btn btn-primary">Subscribe →</a>
+  </div>
+
+  <div class="pricing-card featured">
+    <div class="plan-name">📊 Project Pulse Monitor</div>
+    <div class="plan-desc">Weekly automated project health reports</div>
+    <div class="price">$197 <span>/mo</span></div>
+    <div class="price-sub">Per project. Cancel anytime.</div>
+    <ul>
+      <li>Weekly RFI cycle analysis delivered to your inbox</li>
+      <li>Anomaly detection — catch problems before they escalate</li>
+      <li>Bottleneck identification: which reviewer, sub, or spec section is slowing you down</li>
+      <li>Draft weekly status report — review in 5 min instead of 2 hours</li>
+      <li>Submittal compliance trends week over week</li>
+      <li>Change order velocity tracking</li>
+      <li>Integrates with Procore + your existing tools</li>
+    </ul>
+    <a href="/starter-kit/" class="btn btn-secondary">Join Waitlist</a>
+  </div>
+</div>
+
+<div class="section section-light" style="padding: 3rem 0;">
+  <div class="container" style="max-width: 640px; text-align: center;">
+    <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.75rem;">Not Sure Where to Start?</h2>
+    <p style="color: var(--gray-500); margin-bottom: 1.5rem;">Book a free 30-min Project Pulse Check. I'll look at your current workflow and tell you what's bleeding time. No obligation.</p>
+    <a href="/starter-kit/" style="display: inline-block; background: var(--accent); color: var(--navy); font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none;">Book Free Assessment</a>
+  </div>
+</div>
+
+<div class="faq-section">
+  <h2>Common Questions</h2>
+  
+  <div class="faq-item">
+    <h3>Do I need to install anything?</h3>
+    <p>No. The Template Vault is downloadable templates that work in the tools you already use. The Project Pulse Monitor connects to your existing systems — we handle the setup.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Can I expense this?</h3>
+    <p>At $47-$197/mo, most GCs approve this at the department level. No procurement process required.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Does this replace my PM?</h3>
+    <p>No. It removes the grunt work so your PM can focus on schedule, budget, and site coordination instead of report-writing.</p>
+  </div>
+  <div class="faq-item">
+    <h3>What regions do you work with?</h3>
+    <p>Canada, USA, UAE, and Egypt. Construction management processes are universal — our templates work anywhere.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Can I cancel anytime?</h3>
+    <p>Yes. Monthly subscriptions with no lock-in. Annual subscriptions refunded pro-rata.</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="/">FieldBridge HQ</a> — Construction Workflow Systems. Ontario, Canada.</p>
+</footer>
+
+</body>
+</html>
